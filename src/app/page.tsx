@@ -170,7 +170,7 @@ export default function Home() {
                 <Button
                   type="submit"
                   className="px-4 py-2 text-sm"
-                  variant={isFormComplete ? 'default' : 'outline'}
+                  variant={isFormComplete ? 'default' : 'disabled'}
                 >
                   분석 시작
                 </Button>
@@ -180,7 +180,7 @@ export default function Home() {
         </Card.Card>
 
         {/* 결과 */}
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
           <Card.Card>
             <Card.CardHeader>
               <Card.CardTitle className="text-lg">연도별 분포</Card.CardTitle>
