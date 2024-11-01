@@ -9,7 +9,7 @@ import { format } from 'date-fns';
 
 const ChartPlaceholder = ({ title }: { title: string }) => (
   <div className="flex h-40 w-full items-center justify-center rounded bg-gray-100">
-    <span className="text-gray-500">{title} 차트</span>
+    <span className="text-gray-500">sample</span>
   </div>
 );
 
@@ -43,7 +43,7 @@ export default function Home() {
     searchTerm && channels.length > 0 && dateRange.from && dateRange.to;
 
   return (
-    <div className="min-h-screen bg-white pb-32">
+    <div className="min-h-screen bg-slate-100 pb-28">
       {/* 헤더 영역 */}
       <div className="justify-between flex items-center mb-8 bg-white fixed w-full h-16 z-50 p-4 shadow-sm border-b-2">
         <h1 className=" text-left text-3xl font-bold">Foodtech Insight Lab</h1>
@@ -76,7 +76,7 @@ export default function Home() {
 
       <div className="p-8 pt-28">
         {/* 매개변수 입력 */}
-        <Card.Card className="mx-auto mb-8 max-w-4xl">
+        <Card.Card className="mx-auto mb-8 max-w-4xl border-none rounded-2xl">
           <Card.CardHeader>
             <Card.CardTitle>분석 매개변수 설정</Card.CardTitle>
             <Card.CardDescription>
@@ -180,8 +180,8 @@ export default function Home() {
         </Card.Card>
 
         {/* 결과 */}
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
-          <Card.Card>
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <Card.Card className="rounded-2xl border-none">
             <Card.CardHeader>
               <Card.CardTitle className="text-lg">연도별 분포</Card.CardTitle>
             </Card.CardHeader>
@@ -190,7 +190,7 @@ export default function Home() {
             </Card.CardContent>
           </Card.Card>
 
-          <Card.Card>
+          <Card.Card className="rounded-2xl border-none">
             <Card.CardHeader>
               <Card.CardTitle className="text-lg">저널별 분포</Card.CardTitle>
             </Card.CardHeader>
@@ -199,7 +199,7 @@ export default function Home() {
             </Card.CardContent>
           </Card.Card>
 
-          <Card.Card>
+          <Card.Card className="rounded-2xl border-none">
             <Card.CardHeader>
               <Card.CardTitle className="text-lg">카테고리 분포</Card.CardTitle>
             </Card.CardHeader>
@@ -208,7 +208,7 @@ export default function Home() {
             </Card.CardContent>
           </Card.Card>
 
-          <Card.Card>
+          <Card.Card className="rounded-2xl border-none">
             <Card.CardHeader>
               <Card.CardTitle className="text-lg">
                 키워드 워드클라우드
@@ -219,7 +219,7 @@ export default function Home() {
             </Card.CardContent>
           </Card.Card>
 
-          <Card.Card>
+          <Card.Card className="rounded-2xl border-none">
             <Card.CardHeader>
               <Card.CardTitle className="text-lg">다빈도 키워드</Card.CardTitle>
             </Card.CardHeader>
@@ -228,7 +228,7 @@ export default function Home() {
             </Card.CardContent>
           </Card.Card>
 
-          <Card.Card>
+          <Card.Card className="rounded-2xl border-none">
             <Card.CardHeader>
               <Card.CardTitle className="text-lg">다빈도 식품군</Card.CardTitle>
             </Card.CardHeader>
@@ -237,7 +237,7 @@ export default function Home() {
             </Card.CardContent>
           </Card.Card>
 
-          <Card.Card>
+          <Card.Card className="rounded-2xl border-none">
             <Card.CardHeader>
               <Card.CardTitle className="text-lg">지역별 분포</Card.CardTitle>
             </Card.CardHeader>
