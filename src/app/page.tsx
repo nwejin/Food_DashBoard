@@ -47,6 +47,8 @@ export default function Home() {
       {/* 헤더 영역 */}
       <div className="justify-between flex items-center mb-8 bg-white fixed w-full h-16 z-50 p-4 shadow-sm border-b-2">
         <h1 className=" text-left text-3xl font-bold">Foodtech Insight Lab</h1>
+
+        {/* 챗봇 영역 */}
         <div className="right-4 z-50">
           <Popover.Popover>
             <Popover.PopoverTrigger asChild>
